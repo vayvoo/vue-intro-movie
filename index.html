@@ -11,7 +11,7 @@
     <div class="nav-bar"></div>
     <div id="app">
         <div class="product">
-            <h1>{{ movie.title }}</h1>
+            <h1 :class="{active: movie.isActive}">{{ movie.title }}</h1>
             <p>{{ movie.description }}</p>
             
             <a :href="movie.trailer" target="_blank"><img :src="movie.poster" :alt="movie.alt" width="300" height="450"></a>
